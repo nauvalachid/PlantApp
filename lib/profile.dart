@@ -46,6 +46,27 @@ class _ProfilePageState extends State<ProfilePage> {
         ),
         centerTitle: true,
       ),
+       body: SingleChildScrollView(
+        padding: const EdgeInsets.all(16),
+        child: Column(
+          children: [
+            const SizedBox(height: 10),
+            Center(
+              child: Stack(
+                alignment: Alignment.bottomRight,
+                children: [
+                  CircleAvatar(
+                    radius: 50,
+                    backgroundImage: _imageFile != null
+                        ? FileImage(_imageFile!)
+                        : const AssetImage('assets/images/logo.png') as ImageProvider,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
