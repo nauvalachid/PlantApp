@@ -90,9 +90,44 @@ class RecomendPlantCard extends StatelessWidget {
                   bottomLeft: Radius.circular(10),
                   bottomRight: Radius.circular(10),
                 ),
+                boxShadow: [
+                  BoxShadow(
+                    offset: const Offset(0, 10),
+                    blurRadius: 50,
+                    color: kPrimaryColor.withOpacity(0.23),
+                  ),
+                ],
+              ),
+              child: Row(
+                children: [
+                  RichText(
+                    text: TextSpan(
+                      children: [
+                        TextSpan(
+                          text: "$title\n".toUpperCase(),
+                          style: Theme.of(context).textTheme.labelLarge,
+                        ),
+                        TextSpan(
+                          text: country.toUpperCase(),
+                          style: TextStyle(
+                            color: kPrimaryColor.withOpacity(0.5),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const Spacer(),
+                  Text(
+                    '\$$price',
+                    style: Theme.of(context)
+                        .textTheme
+                        .labelLarge
+                        ?.copyWith(color: kPrimaryColor),
+                  )
+                ],
               ),
             ),
-          ),
+          )
         ],
       ),
     );
