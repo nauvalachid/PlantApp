@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:plantapp/camera/home_page.dart';
 import 'package:plantapp/constants.dart';
+import 'package:plantapp/profile.dart';
 
 class MyBottomNavBar extends StatelessWidget {
   const MyBottomNavBar({Key? key}) : super(key: key);
@@ -48,7 +49,12 @@ class MyBottomNavBar extends StatelessWidget {
           IconButton(
             icon: SvgPicture.asset("assets/icons/user-icon.svg"),
             onPressed: () {
-              // TODO: Add user icon action
+               Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ProfilePage()
+                                ),
+                              );
             },
           ),
         ],
