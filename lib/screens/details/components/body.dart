@@ -19,7 +19,7 @@ class Body extends StatelessWidget {
           Row(
             children: <Widget>[
               SizedBox(
-                width: size.width / 2,
+                width: (size.width - 8) / 2,
                 height: 84,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
@@ -40,10 +40,27 @@ class Body extends StatelessWidget {
                   ),
                 ),
               ),
-              Expanded(
-                child: TextButton(
+               const SizedBox(width: 8),
+               SizedBox(
+                width: (size.width - 8) / 2,
+                height: 84,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(20),
+                      ),
+                    ),
+                    backgroundColor: kPrimaryColor,
+                  ),
                   onPressed: () {},
-                  child: const Text("Description"),
+                  child: const Text(
+                    "Description",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                    ),
+                  ),
                 ),
               ),
             ],
