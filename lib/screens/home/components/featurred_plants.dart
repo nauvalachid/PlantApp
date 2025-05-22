@@ -29,3 +29,14 @@ class FeaturedPlants extends StatelessWidget {
     debugPrint("Feature plant card tapped");
   }
 }
+
+class FeaturePlantCard extends StatelessWidget {
+  const FeaturePlantCard({
+    Key? key,
+    required this.image,
+    required this.press,
+  }) : super(key: key);
+
+  final String image;
+  final VoidCallback press;
+}
