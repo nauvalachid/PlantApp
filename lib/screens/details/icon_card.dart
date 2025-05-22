@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:plantapp/constants.dart';
 
 class IconCard extends StatelessWidget {
@@ -34,6 +35,7 @@ class IconCard extends StatelessWidget {
           ),
         ],
       ),
+      child: SvgPicture.asset(icon),
     );
   }
 }
