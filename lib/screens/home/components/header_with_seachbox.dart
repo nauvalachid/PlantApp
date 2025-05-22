@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:plantapp/constants.dart';
 
 class HeaderWithSearchBox extends StatelessWidget {
@@ -34,7 +35,7 @@ class HeaderWithSearchBox extends StatelessWidget {
               children: <Widget>[
                 Text(
                   'Hi Uishopy!',
-                  style: Theme.of(context).textTheme.headline5?.copyWith(
+                  style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       color: Colors.white, fontWeight: FontWeight.bold),
                 ),
                 const Spacer(),
@@ -60,6 +61,24 @@ class HeaderWithSearchBox extends StatelessWidget {
                     blurRadius: 50,
                     color: kPrimaryColor.withOpacity(0.23),
                   ),
+                ],
+              ),
+               child: Row(
+                children: <Widget>[
+                  Expanded(
+                    child: TextField(
+                      onChanged: (value) {},
+                      decoration: InputDecoration(
+                        hintText: "Search",
+                        hintStyle: TextStyle(
+                          color: kPrimaryColor.withOpacity(0.5),
+                        ),
+                        enabledBorder: InputBorder.none,
+                        focusedBorder: InputBorder.none,
+                      ),
+                    ),
+                  ),
+                  SvgPicture.asset("assets/icons/search.svg"),
                 ],
               ),
             ),
