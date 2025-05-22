@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:plantapp/constants.dart';
 
 class RecomendsPlants extends StatelessWidget {
   const RecomendsPlants({
@@ -66,3 +67,15 @@ class RecomendPlantCard extends StatelessWidget {
   final int price;
   final VoidCallback press;
 }
+
+ @override
+  Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    return Container(
+      margin: const EdgeInsets.only(
+        left: kDefaultPadding,
+        top: kDefaultPadding / 2,
+        bottom: kDefaultPadding * 2.5,
+      ),
+    );
+  }
