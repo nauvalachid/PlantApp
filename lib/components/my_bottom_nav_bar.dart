@@ -34,7 +34,7 @@ class MyBottomNavBar extends StatelessWidget {
             },
           ),
           IconButton(
-            icon: SvgPicture.asset("assets/icons/heart-icon.svg"),
+            icon: SvgPicture.asset("assets/icons/camera.svg"),
             onPressed: () {
               // TODO: Add heart icon action
             },
