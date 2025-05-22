@@ -29,6 +29,14 @@ class TitleAndPrice extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                 ),
+                TextSpan(
+                  text: country,
+                  style: const TextStyle(
+                    fontSize: 20,
+                    color: kPrimaryColor,
+                    fontWeight: FontWeight.w300,
+                  ),
+                ),
               ],
             ),
           ),
