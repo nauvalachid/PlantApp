@@ -61,6 +61,17 @@ class _ProfilePageState extends State<ProfilePage> {
                         ? FileImage(_imageFile!)
                         : const AssetImage('assets/images/logo.png') as ImageProvider,
                   ),
+                   GestureDetector(
+                    onTap: _pickFromGallery,
+                    child: Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: const BoxDecoration(
+                        color: Colors.green,
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(Icons.edit, color: Colors.white, size: 16),
+                    ),
+                  ),
                 ],
               ),
             ),
