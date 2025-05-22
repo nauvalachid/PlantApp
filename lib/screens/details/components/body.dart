@@ -16,6 +16,24 @@ class Body extends StatelessWidget {
           const SizedBox(height: kDefaultPadding),
           const TitleAndPrice(title: "Angelica", country: "Russia", price: 440),
           const SizedBox(height: kDefaultPadding),
+          Row(
+            children: <Widget>[
+              SizedBox(
+                width: size.width / 2,
+                height: 84,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(20),
+                      ),
+                    ),
+                    backgroundColor: kPrimaryColor,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
