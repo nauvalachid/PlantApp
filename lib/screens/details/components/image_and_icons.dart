@@ -53,6 +53,13 @@ class ImageAndIcons extends StatelessWidget {
                   topLeft: Radius.circular(63),
                   bottomLeft: Radius.circular(63),
                 ),
+                boxShadow: [
+                  BoxShadow(
+                    offset: const Offset(0, 10),
+                    blurRadius: 60,
+                    color: kPrimaryColor.withOpacity(0.29),
+                  ),
+                ],
               ),
             ),
           ],
