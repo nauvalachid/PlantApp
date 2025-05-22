@@ -38,7 +38,12 @@ class _FullPageState extends State<FullPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Camera', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+      appBar: AppBar(
+         leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Color.fromARGB(255, 12, 152, 105)),
+          onPressed: () => Navigator.pop(context),
+        ),
+        title: const Text('Camera', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
       centerTitle: true,),
       body: SafeArea(
         child: Column(
