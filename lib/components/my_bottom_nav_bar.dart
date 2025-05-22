@@ -33,6 +33,18 @@ class MyBottomNavBar extends StatelessWidget {
               // TODO: Add flower icon action
             },
           ),
+          IconButton(
+            icon: SvgPicture.asset("assets/icons/heart-icon.svg"),
+            onPressed: () {
+              // TODO: Add heart icon action
+            },
+          ),
+          IconButton(
+            icon: SvgPicture.asset("assets/icons/user-icon.svg"),
+            onPressed: () {
+              // TODO: Add user icon action
+            },
+          ),
         ],
       ),
     );
