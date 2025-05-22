@@ -132,7 +132,13 @@ class _MapPageState extends State<MapPage> {
           return const Scaffold(body: Center(child: CircularProgressIndicator()));
         }
         return Scaffold(
-          appBar: AppBar(title: const Text('Pilih Alamat')),
+          appBar: AppBar(title: const Text('Pilih Alamat',style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color: Colors.white),),centerTitle: true,
+            leading: IconButton(
+              icon: const Icon(Icons.arrow_back, color: Colors.white),
+              onPressed: () => Navigator.pop(context),
+            ),
+            backgroundColor: Theme.of(context).primaryColor,
+          ),
           body: SafeArea(
             child: Stack(
               children: [
@@ -158,7 +164,7 @@ class _MapPageState extends State<MapPage> {
                 ),
                 Positioned(
                   top: 25,
-                  left: 25,
+                  left: 20,
 
                   child: Container(
                     padding: const EdgeInsets.all(8),
@@ -194,25 +200,28 @@ class _MapPageState extends State<MapPage> {
               ],
             ),
           ),
-          floatingActionButton: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.start,
+          floatingActionButton: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              const SizedBox(height: 8),
+              const SizedBox(width: 35),
               if (_pickedAddress != null)
                 FloatingActionButton.extended(
+                  backgroundColor: Theme.of(context).primaryColor,
                   onPressed: _confirmSelection,
                   heroTag: 'confirm',
-                  label: const Text("Pilih Alamat"),
-                ),
-              
-              const SizedBox(height: 8),
+                  label: const Text("Pilih Alamat",
+                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold,color: Colors.white),
+                  ),
+                ), 
+              const SizedBox(width: 8),
               if (_pickedAddress != null)
                 // clear
                 FloatingActionButton.extended(
+                  backgroundColor: Theme.of(context).primaryColor,
                   heroTag: 'clear',
-
-                  label: const Text('Hapus Alamat'),
+                  label: const Text('Hapus Alamat',
+                    style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold,color: Colors.white),
+                  ),
                   onPressed: () {
                     setState(() {
                       _pickedAddress = null;
