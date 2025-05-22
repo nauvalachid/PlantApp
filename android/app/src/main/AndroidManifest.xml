@@ -13,10 +13,6 @@
         android:icon="@mipmap/ic_launcher"
         android:enableOnBackInvokedCallback="true"
         android:usesCleartextTraffic="true">
-
-         <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDibqZy4BQxwm3oM1BS57VmEEhKH_Ug1fU"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -34,7 +30,7 @@
               android:name="io.flutter.embedding.android.NormalTheme"
               android:resource="@style/NormalTheme"
               android:name="com.google.android.geo.API_KEY"
-              android:value="AIzaSyCdqmGoK2LoGW5p_WS4CYTCdsQI4OKJH80"
+              android:value="AIzaSyDibqZy4BQxwm3oM1BS57VmEEhKH_Ug1fU"
               />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
