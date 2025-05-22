@@ -25,6 +25,27 @@ class RecomendsPlants extends StatelessWidget {
               // );
             },
           ),
+          RecomendPlantCard(
+            image: "assets/images/image_2.png",
+            title: "Angelica",
+            country: "Russia",
+            price: 440,
+            press: () {
+              // Navigator.push(
+              //   context,
+              //   MaterialPageRoute(
+              //     builder: (context) => const DetailsScreen(),
+              //   ),
+              // );
+            },
+          ),
+          RecomendPlantCard(
+            image: "assets/images/image_3.png",
+            title: "Samantha",
+            country: "Russia",
+            price: 440,
+            press: () {},
+          ),
         ],
       ),
     );
