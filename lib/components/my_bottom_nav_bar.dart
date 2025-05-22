@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:plantapp/camera/home_page.dart';
 import 'package:plantapp/constants.dart';
 
 class MyBottomNavBar extends StatelessWidget {
@@ -36,7 +37,12 @@ class MyBottomNavBar extends StatelessWidget {
           IconButton(
             icon: SvgPicture.asset("assets/icons/camera.svg"),
             onPressed: () {
-              // TODO: Add heart icon action
+               Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => FullPage()
+                                ),
+                              );
             },
           ),
           IconButton(
