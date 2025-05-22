@@ -3,6 +3,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:flutter/material.dart';
 import 'package:plantapp/camera/camera_page.dart';
+import 'package:plantapp/camera/storage_helper.dart';
 
 class FullPage extends StatefulWidget {
   const FullPage({super.key});
