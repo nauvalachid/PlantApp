@@ -66,9 +66,8 @@ class RecomendPlantCard extends StatelessWidget {
   final String image, title, country;
   final int price;
   final VoidCallback press;
-}
 
- @override
+  @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
@@ -77,5 +76,7 @@ class RecomendPlantCard extends StatelessWidget {
         top: kDefaultPadding / 2,
         bottom: kDefaultPadding * 2.5,
       ),
+      
     );
   }
+}
