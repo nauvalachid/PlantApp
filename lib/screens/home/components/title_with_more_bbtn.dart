@@ -21,7 +21,7 @@ class TitleWithMoreBtn extends StatelessWidget {
           const Spacer(),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              primary: kPrimaryColor,
+              backgroundColor: kPrimaryColor,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20),
               ),
