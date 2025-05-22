@@ -75,6 +75,17 @@ class _ProfilePageState extends State<ProfilePage> {
                 ],
               ),
             ),
+            const SizedBox(height: 12),
+            const Text(
+              'Nauval Achid Rosady',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 4),
+            const Text(
+              'nauvalachid@gmail.com',
+              style: TextStyle(color: Colors.grey),
+            ),
+            const SizedBox(height: 20),
           ],
         ),
       ),
