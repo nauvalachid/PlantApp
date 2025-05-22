@@ -60,6 +60,11 @@ class ImageAndIcons extends StatelessWidget {
                     color: kPrimaryColor.withOpacity(0.29),
                   ),
                 ],
+                image: const DecorationImage(
+                  alignment: Alignment.centerLeft,
+                  fit: BoxFit.cover,
+                  image: AssetImage("assets/images/img.png"),
+                ),
               ),
             ),
           ],
