@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:plantapp/constants.dart';
+import 'package:plantapp/screens/details/components/icon_card.dart';
 
 class ImageAndIcons extends StatelessWidget {
   const ImageAndIcons({
@@ -35,6 +36,11 @@ class ImageAndIcons extends StatelessWidget {
                         },
                       ),
                     ),
+                    const Spacer(),
+                    const IconCard(icon: "assets/icons/sun.svg"),
+                    const IconCard(icon: "assets/icons/icon_2.svg"),
+                    const IconCard(icon: "assets/icons/icon_3.svg"),
+                    const IconCard(icon: "assets/icons/icon_4.svg"),
                   ],
                 ),
               ),
