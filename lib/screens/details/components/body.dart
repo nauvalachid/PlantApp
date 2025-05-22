@@ -30,6 +30,20 @@ class Body extends StatelessWidget {
                     ),
                     backgroundColor: kPrimaryColor,
                   ),
+                  onPressed: () {},
+                  child: const Text(
+                    "Buy Now",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                    ),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("Description"),
                 ),
               ),
             ],
